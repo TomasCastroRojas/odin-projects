@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
-    background-color: bisque;
+    font-family: Roboto, sans-serif;
+    background-color: #eee;
     margin: 0;
 }
 
@@ -8,10 +11,11 @@ a {
 }
 
 #header {
+    font-weight: bold;
     text-align: center;
-    background-color: #eee;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    background-color: bisque;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 10px 30px rgba(0,0,0,.1);
     margin: 0px 0px;
     padding: 8px 0px;
 }
@@ -20,7 +24,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
+    padding-top: 32px;
 }
 
 .recipe {
@@ -29,4 +33,15 @@ a {
     align-items: center;
     text-align: center;
     width: 33%;
+}
+.recipe img {
+    width: 300px;
+    height: 400px;
+}
+
+.recipe img:hover{
+    transform: scale(1.05);
+    transition: all ease ;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(136, 219, 140);
 }
